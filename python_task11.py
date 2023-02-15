@@ -4,3 +4,16 @@
 # Input: 5
 # Output: 6
 
+n = int(input('Введите число: '))
+a0 = 0
+a1 = 1
+count = 1
+while a0 < n:
+    x = a0+a1
+    a0 = a1
+    a1 = x
+    count+=1
+if a0!=n:
+    print(-1)
+else:
+    print(count)
