@@ -22,7 +22,7 @@ print(list_result)
 list_2 = [1, 2, 3, 4, 5]
 m = int(input(f"Введите число цифр для престановки в массиве {list_2}: "))
 for i in range(m):
-    list_2.insert(0, list_2.pop(-1))
+    list_2.insert(0, list_2.pop(len(list_2)-1))
 print(list_2)
 
 # .insert - функция, которая добавляет элемент на указанную позицию (0)
