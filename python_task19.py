@@ -5,8 +5,9 @@
 # Input: [1, 2, 3, 4, 5] k = 3
 # Output: [4, 5, 1, 2, 3]
 
+# Вариант 1 в 2 цикла
 list_1 = [5, 4, 6, 7, 8, -10]
-k = int(input())
+k = int(input(f"Введите число цифр для престановки в массиве {list_1}: "))
 k = k % len(list_1)
 list_result = list()
 
@@ -16,3 +17,13 @@ for i in range(k):
 for i in range(len(list_1)-k):
     list_result.append(list_1[i])
 print(list_result)
+
+# 2 вариант в 1 цикл
+list_2 = [1, 2, 3, 4, 5]
+m = int(input(f"Введите число цифр для престановки в массиве {list_2}: "))
+for i in range(m):
+    list_2.insert(0, list_2.pop(-1))
+print(list_2)
+
+# .insert - функция, которая добавляет элемент на указанную позицию (0)
+# .pop - функция, которая возвращает значение данного элем. (элем. кот мы удаляем по номеру (-1))
