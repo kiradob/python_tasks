@@ -14,6 +14,6 @@ while a0 < n:
     a1 = x
     count += 1
 if a0 != n:
-    print(-1)
+    print(f"Числа {n} нет в последовательности Фибоначчи")
 else:
     print(count)
