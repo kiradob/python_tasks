@@ -5,12 +5,14 @@
 
 def prime(n):
     i = 2
-    flag=True
+    flag = True
     while i < n and flag:
         if n % i == 0:
-            flag=False
+            flag = False
         i += 1
     if flag:
         return "yes"
     return "no"
+
+
 print(prime(int(input("Введите число: "))))
