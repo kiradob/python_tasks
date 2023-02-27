@@ -40,19 +40,23 @@
 # print()
 # print()
 
-# Вложенный словарь
-dict_2={"Tom":{"English":5,"Math":5},"Red":{"English":4,"Math":3},"Jack":{"English":5,"Math":4}}
-print()
-for i in dict_2["Tom"].items():
-# print(dict_2["Tom"])
-    print(*i)
-print() 
-print(dict_2["Red"]["Math"])
-print()
-dict_2.update({"Wer":{"English":3,"Math":3}})
-print(dict_2)
-print()
-dict_2["Tom"].update({"Trud":6})
-print()
-print(dict_2)
-print()
+# # Вложенный словарь
+# dict_2={"Tom":{"English":5,"Math":5},"Red":{"English":4,"Math":3},"Jack":{"English":5,"Math":4}}
+# print()
+# for i in dict_2["Tom"].items():
+# # print(dict_2["Tom"])
+#     print(*i)
+# print() 
+# print(dict_2["Red"]["Math"])
+# print()
+# dict_2.update({"Wer":{"English":3,"Math":3}})
+# print(dict_2)
+# print()
+# dict_2["Tom"].update({"Trud":6})
+# print()
+# print(dict_2)
+# print()
+
+# Функция map
+list_numbers = list(map(int, input('Введите числа: ').split()))
+print(list_numbers)
